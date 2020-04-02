@@ -2,47 +2,38 @@
 layout: default
 section_id: home
 slides:
-- title: Brand / Web design
-  text: Color displays the <span>soul</span>
-  button:
-    text: Case study
-    url: http://themeforest.net/user/honryou/portfolio?ref=honryou
+- title: Piano
+  text: Music that creates <span>emotion</span>
   bg_color: "#F7C162"
   image: images/@stock/half-1.jpg
-- title: Brand / Web design
-  text: Less is <span>more</span>
-  button:
-    text: Case study
-    url: http://themeforest.net/user/honryou/portfolio?ref=honryou
-  bg_color: "#c9c9c9"
+- title: Flamenco
+  text: On a <span>quest</span> to discover
+  bg_color: "#DC143C"
   image: images/@stock/half-3.jpg
-- title: Brand / Web design
-  text: Do a <span>happy</span> dance
-  button:
-    text: Case study
-    url: http://themeforest.net/user/honryou/portfolio?ref=honryou
+- title: World
+  text: Exploring music around <span>us</span>
   bg_color: "#f6c418"
   image: images/@stock/half-4.jpg
 
 works_left:
-- title: Cooco fashion
+- title: World Flamenco Concert
   link_to: portfolio-item.html
   image: images/@stock/work-1.jpg
-  categories: Website, brand
-- title: Dear god
+  categories: Flamenco, pasodoble
+- title: Maximilian (Emperor) Concert
   link_to: portfolio-item.html
   image: images/@stock/work-20.jpg
-  categories: Website, print
+  categories: Waltz, marches
 
 works_right:
-- title: Dances App
+- title: Halloween Concert
   link_to: portfolio-item-2.html
   image: images/@stock/work-3.jpg
-  categories: Website
-- title: Vintage chairs
+  categories: Macabre, history
+- title: New age series
   link_to: portfolio-item.html
   image: images/@stock/work-5.jpg
-  categories: Graphic, brand
+  categories: New age
 
 milestones:
 - title: Concerts
@@ -51,6 +42,9 @@ milestones:
 - title: Countries
   from: 0
   to: 4
+- title: Genres
+  from: 0
+  to: 3
 - title: Composiciones
   from: 0
   to: 34
@@ -81,6 +75,8 @@ clients:
 - image: images/@stock/client-2.png
 - image: images/@stock/client-3.png
 - image: images/@stock/client-4.png
+- image: images/@stock/client-5.png
+- image: images/@stock/client-6.png
 ---
 
 <div class="full no-padding" style="height: 100vh;">
@@ -92,7 +88,6 @@ clients:
             <p>{{ slide.title }}</p>
             <h1>{{ slide.text }}</h1>
             <div class="three spacing"></div>
-            <a href="{{ slide.button.url }}" class="button boxed black">{{ slide.button.text }}</a>
           </div>
           <div class="slide-left" style="background-color: {{ slide.bg_color }};">
           </div>
@@ -113,7 +108,7 @@ clients:
       <div class="medium-10 medium-centered columns">
         <img src="images/@stock/diamond-brown.png" alt="" class="wow flipInY" data-wow-duration="2s" data-wow-delay="0.1s">
         <div class="spacing"></div>
-        <h2>Who</h2>
+        <h2>Who is Emmanuel?</h2>
       </div>
     </div>
   </div>
@@ -134,7 +129,7 @@ clients:
   <div class="section-title">
     <div class="row">
       <div class="medium-10 medium-centered columns">
-        <h2>Recent projects/h2>
+        <h2>Recent projects</h2>
         <p>From concerts to collaborations</p>
       </div>
     </div>
@@ -242,37 +237,4 @@ clients:
     </div>
   </div>
   <div class="two spacing"></div>
-</div>
-<div class="full centered-text">
-  <div class="section-title">
-    <div class="row">
-      <div class="medium-10 medium-centered columns">
-       <!-- TODO Remmove -->
-        <h2>Recent posts</h2>
-        <p>Know what we are thinking and doing.</p>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    {% for post in site.posts limit:3 %}
-      <div class="large-4 columns">
-        <div class="post recent-post">
-          {% if post.images %}
-            <a href="{{post.url}}" class="home"><img src="{{site.url}}/{{post.images[0]}}" alt="post"></a>
-            <div class="spacing"></div>
-          {% endif %}
-          <h4>{{post.title}}</h4>
-          <p class="info">
-            <span>
-              <a href="#">{{ post.author }}</a>
-            </span>
-            ,
-            <span>{{ post.date | date: "%B %d, %Y" }}</span>
-          </p>
-          <div class="spacing"></div>
-          <p><a href="{{post.url}}" class="button boxed brown">Read more</a></p>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
 </div>

@@ -1,33 +1,20 @@
-- name: Home
-  path: index.html
-  section_id: home
+- name: Music
+  section_id: music
   children:
-    - name: Home Studio
-      path: index.html
-    - name: Home Personal
-      path: index-personal.html
-- name: Pages
-  path: about.html
-  section_id: pages
-  children:
-    - name: About Us
-      path: about.html
-    - name: Services
-      path: services.html
-    - name: Services 2
-      path: services-2.html
-- name: Works
-  path: portfolio.html
-  section_id: works
-  children:
-    - name: Portfolio Style 1
-      path: portfolio.html
-    - name: Portfolio Style 2
-      path: portfolio-2.html
-    - name: Single Page 1
+    - name: Flamenco
       path: portfolio-item.html
-    - name: Single Page 2
+    - name: Waltz
       path: portfolio-item-2.html
+    - name: New Age
+      path: portfolio-item.html
+    - name: Middle East
+      path: portfolio-item-2.html
+- name: Gallery
+  path: about.html
+  section_id: gallery
+- name: Scores
+  path: portfolio.html
+  section_id: scores
 - name: Contact
   path: contact.html
   section_id: contact
