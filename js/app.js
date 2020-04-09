@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
       submitHandler: function(form) {
         $.ajax({
           type: 'POST',
-          url: 'https://formspree.io/guicaro@gmail.com',
+          url: 'https://formspree.io/xdolzqwy',
           data: $(form).serialize(),
           success: function(data) {
             if(data.match(/success/)) {
