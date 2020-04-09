@@ -66,17 +66,23 @@ testimonials_right:
 - author: Francisco Domínguez - Governor of the State of Querétaro, Mexico
   content: "Today I met Emmanuel, a pianist, these are the talents we need to support"
   avatar: images/@stock/author-4.png
-- author: Maestro Carlos Outón - Cconductor of the City of Burgos Music Band (Spain) and principal French Horn in the Orchestra “La Artistica” de Buñol
+- author: Maestro Carlos Outón - Conductor of the City of Burgos Music Band (Spain) and principal French Horn in the Orchestra “La Artistica” de Buñol
   content: "We have played your songs, and we liked them! Bravo!"
   avatar: images/@stock/author-5.png
 
 clients:
 - image: images/@stock/client-1.png
+  link: https://www.uaq.mx
 - image: images/@stock/client-2.png
+  link: https://festivalflamencodesantiago.com
 - image: images/@stock/client-3.png
+  link: https://www.freixenetmexico.com.mx
 - image: images/@stock/client-4.png
+  link: https://www.queretaro.gob.mx
 - image: images/@stock/client-5.png
+  link: https://www.guanajuato.gob.mx
 - image: images/@stock/client-6.png
+  link: http://www.cincovillas.org
 ---
 
 <div class="full no-padding" style="height: 100vh;">
@@ -231,7 +237,7 @@ clients:
     <div class='large-12 columns'>
       <div class='clients'>
         {% for client in page.clients %}
-          <div><a href="#"><img alt="" src="{{site.url}}/{{client.image}}"></a></div>
+          <div><a href="{{client.link}}" target="_blank"><img alt="" src="{{site.url}}/{{client.image}}"></a></div>
         {% endfor %}
       </div>
     </div>
