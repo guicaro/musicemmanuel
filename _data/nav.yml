@@ -18,8 +18,12 @@
     - name: Waltz 
       path: portfolio-item-2.html
 - name: Gallery
-  path: gallery.html
   section_id: gallery
+  children:
+    - name: Profesionals
+      path: gallery.html
+    - name: Personal
+      path: gallery.html
 - name: Scores
   path: scores.html
   section_id: scores
