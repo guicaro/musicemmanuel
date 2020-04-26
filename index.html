@@ -4,12 +4,12 @@ section_id: home
 slides:
 - title: Piano
   text: Music that creates <span>emotion</span>
-  bg_color: "#3f72cb"
+  bg_color: "#fe677f"
   image: images/@stock/half-4.jpg
 - title: Flamenco
   text: On a <span>quest</span> to discover
   bg_color: "#F7C162"
-  image: images/@stock/half-3.jpg
+  image: images/emmanuelPianoNegro.jpg
 - title: World
   text: Exploring music around <span>us</span>
   bg_color: "#3f72cb"
@@ -41,13 +41,13 @@ milestones:
   to: 25
 - title: Countries
   from: 0
-  to: 4
+  to: 5
 - title: Genres
   from: 0
-  to: 3
+  to: 9
 - title: Composiciones
   from: 0
-  to: 34
+  to: 30
 
 testimonials_left:
 - author: Laureano Brizuela - Argentine singer-songwriter and musician, 30 year career
@@ -60,7 +60,7 @@ testimonials_left:
   content: "Wow Maestro Emmanuel!  Your music makes me want to get up and dance. It’s passionate, and full of power"
   avatar: images/@stock/author-6.png
 testimonials_right:
-- author: Heriberto Murrieta - Bullfighting and sports journalists for ESPN and Radio Formula
+- author: Heriberto Murrieta - Sports journalists for ESPN and Radio Formula
   content: "Emmanuel Cabrera: inspiration, connection and musical quality" 
   avatar: images/@stock/author-2.png
 - author: Francisco Domínguez - Governor of the State of Querétaro, Mexico
@@ -128,6 +128,63 @@ clients:
     </div>
   </div>
 </div>
+<div class="full">
+  <div class="section-title">
+    <div class="row">
+      <div class="medium-10 medium-centered columns">
+        <h2>Testimonials</h2>
+        <p>I am honored to receive such kind words from outstanding human beings</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-6 columns">
+      {% for testimonial in page.testimonials_left %}
+        <div class="quote wow slideInLeft" data-wow-delay="{{ 0.2 | times:forloop.index0 }}s">
+          <div class="row">
+            <div class="small-3 columns">
+              <img src="{{testimonial.avatar}}" alt="auhor">
+            </div>
+            <div class="small-9 columns">
+              <p>{{testimonial.content}}</p>
+              <p class="author">{{testimonial.author}}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="large-6 columns">
+      {% for testimonial in page.testimonials_right %}
+        <div class="quote reverse wow slideInRight" class="wow" data-wow-delay="{{ 0.2 | times:forloop.index0 }}s">
+          <div class="row">
+            <div class="small-3 columns">
+              <img src="{{testimonial.avatar}}" alt="auhor">
+            </div>
+            <div class="small-9 columns">
+              <p>{{testimonial.content}}</p>
+              <p class="author">{{testimonial.author}}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="full light-grey flower">
+  <div class="three spacing"></div>
+  <div class="row">
+    {% for milestone in page.milestones %}
+      <div class="large-3 columns ">
+        <div class="milestone centered-text">
+          <div class="number" style="color: #333" data-from="{{milestone.from}}" data-to="{{milestone.to}}"> </div>
+          <span>{{milestone.title}}</span>
+          <div class="spacing"></div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="three spacing"></div>
+</div>
 <div class="full no-padding">
   <div class="four spacing"></div>
   <div class="spacing"></div>
@@ -173,63 +230,6 @@ clients:
   </div>
   <div class="spacing"></div>
 </div>
-<div class="full light-grey flower">
-  <div class="three spacing"></div>
-  <div class="row">
-    {% for milestone in page.milestones %}
-      <div class="large-3 columns ">
-        <div class="milestone centered-text">
-          <div class="number" style="color: #333" data-from="{{milestone.from}}" data-to="{{milestone.to}}"> </div>
-          <span>{{milestone.title}}</span>
-          <div class="spacing"></div>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-  <div class="three spacing"></div>
-</div>
-<div class="full">
-  <div class="section-title">
-    <div class="row">
-      <div class="medium-10 medium-centered columns">
-        <h2>Testimonials</h2>
-        <p>I am honored to receive such kind words from outstanding human beings</p>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="large-6 columns">
-      {% for testimonial in page.testimonials_left %}
-        <div class="quote wow slideInLeft" data-wow-delay="{{ 0.2 | times:forloop.index0 }}s">
-          <div class="row">
-            <div class="small-3 columns">
-              <img src="{{testimonial.avatar}}" alt="auhor">
-            </div>
-            <div class="small-9 columns">
-              <p>{{testimonial.content}}</p>
-              <p class="author">{{testimonial.author}}</p>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-    <div class="large-6 columns">
-      {% for testimonial in page.testimonials_right %}
-        <div class="quote reverse wow slideInRight" class="wow" data-wow-delay="{{ 0.2 | times:forloop.index0 }}s">
-          <div class="row">
-            <div class="small-3 columns">
-              <img src="{{testimonial.avatar}}" alt="auhor">
-            </div>
-            <div class="small-9 columns">
-              <p>{{testimonial.content}}</p>
-              <p class="author">{{testimonial.author}}</p>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-</div>
 <div class="full light-grey no-padding">
   <div class='row'>
   <div class="two spacing"></div>
@@ -249,12 +249,11 @@ clients:
       <div class="medium-10 medium-centered columns">
         <h2>Donations</h2>
         <p>Your generosity towards my upcoming projects is always appreciated. Get in touch with me so I can update you on what is coming</p>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_donations" />
-<input type="hidden" name="business" value="GDK2DMVQWXY5S" />
-<input type="hidden" name="currency_code" value="USD" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick" />
+<input type="hidden" name="hosted_button_id" value="NEULJWSMFKTWC" />
+<input type="image" src="https://www.paypalobjects.com/en_US/MX/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_MX/i/scr/pixel.gif" width="1" height="1" />
 </form>
       </div>
     </div>

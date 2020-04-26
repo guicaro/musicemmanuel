@@ -69,6 +69,10 @@ body {
 a:hover {
   cursor: pointer; }
 
+.imggallery {
+  max-width: 70%;
+  height: auto; }
+
 img {
   max-width: 100%;
   height: auto; }
@@ -5779,3 +5783,10 @@ th.hide-for-touch {
 @media not print {
   .show-for-print {
     display: none !important; } }
+
+.bioEmmanuel {
+  font-size: 1.75rem;
+  text-align: justify;
+  text-justify: inter-word;
+  color: #421d03;
+}

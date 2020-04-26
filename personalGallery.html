@@ -2,18 +2,39 @@
 layout: default
 section_id: pages
 services:
-- title: Ricardo Zohn
-  desc: Recognized composer Ricardo Zohn and professor of the East Man School of Music
-  image: images/@stock/ricardoZohn.png
+- title: Moscow, Russian Federation
+  desc: Red Square, in front of St. Basil's Cathedral
+  image: images/moscu.jpg
   image_position: left
-- title: Jose Mari Manzanares
-  desc: Jose Maria Manzanarez who has become an icon model in Advertising Campaigns like Dolce Gabbana, Vanity Fair and Vogue
-  image: images/@stock/joseMari.png
-  image_position: right
-- title: Laureano Brizuela
-  desc: Famous Argentinian rockstar
-  image: images/@stock/laureanoBrizuela.png
+- title: Saint Petersburg, Russian Federation
+  desc: Concert in center of Saint Petersburg  with Flutist Maria Polischuk
+  image: images/conciertoSPB.jpg
   image_position: left
+- title: Dubai, U.A.E.
+  desc: Impressive and unique Middle East
+  image: images/arabiaHalcon.jpg
+  image_position: left
+- title: Surat, India
+  desc: The future generations set the destination of humanity
+  image: images/indiaAmai.jpg
+  image_position: left
+- title: Surat, India
+  desc:  Playing one of my compositions in an Indian wedding
+  image: images/indiaBoda.jpg
+  image_position: left
+- title: Agra, India
+  desc:  The Taj Mahal, one of the wonders of the old world
+  image: images/tajMahal.jpg
+  image_position: left
+- title: Queretaro, Mexico
+  desc: Flamenco, the sensual and passionate music style
+  image: images/bailaoraFlamenco.jpg
+  image_position: left
+- title: Jaipur, India
+  desc: A pure Romani-gipsy family, people known for their outstanding composers and writers
+  image: images/rajastanh.jpg
+  image_position: left
+
 
 ---
 
@@ -42,7 +63,7 @@ services:
     <div class="row">
       {% if service.image_position == 'left' %}
         <div class="medium-6 columns">
-          <img src="{{site.url}}/{{service.image}}" alt="">
+          <img class="imggallery" src="{{site.url}}/{{service.image}}" alt="">
         </div>
         <div class="medium-6 columns">
           <div class="service-info right-text">
@@ -57,11 +78,10 @@ services:
             <h2>{{service.title}}</h2>
             <p>{{service.desc}}</p>
             <div class="two spacing"></div>
-            <a href="#" class="button brown">Case study</a>
           </div>
         </div>
         <div class="medium-6 columns">
-          <img src="{{site.url}}/{{service.image}}" alt="">
+          <img class="imggallery" src="{{site.url}}/{{service.image}}" alt="">
         </div>
       {% endif %}
     </div>

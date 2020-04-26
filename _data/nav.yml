@@ -1,7 +1,12 @@
+- name: Bio
+  path: about.html
+  section_id: about
 - name: Music
   section_id: music
   children:
     - name: Ambient
+      path: portfolio-item.html
+    - name: Dance
       path: portfolio-item.html
     - name: Flamenco
       path: portfolio-item-2.html
@@ -21,9 +26,9 @@
   section_id: gallery
   children:
     - name: Profesionals
-      path: gallery.html
+      path: professionalGallery.html
     - name: Personal
-      path: gallery.html
+      path: personalGallery.html
 - name: Scores
   path: scores.html
   section_id: scores

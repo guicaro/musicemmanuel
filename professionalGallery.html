@@ -1,0 +1,110 @@
+---
+layout: default
+section_id: pages
+services:
+- title: Ricardo Zohn
+  desc: Recognized composer Ricardo Zohn and professor of the East Man School of Music
+  image: images/ricardoZohn.png
+  image_position: right
+- title: Jose Mari Manzanares
+  desc: Jose Maria Manzanarez who has become an icon model in Advertising Campaigns like Dolce Gabbana, Vanity Fair and Vogue
+  image: images/joseMari.png
+  image_position: right
+- title: Laureano Brizuela
+  desc: Famous Argentinian rockstar
+  image: images/laureanoBrizuela.png
+  image_position: right
+- title: Heriberto Murrieta
+  desc: Sportscaster at ESPN
+  image: images/heribertoMurrieta.jpg
+  image_position: right
+- title: Patricia Quintana
+  desc: One of the best chefs in Mexico, considered an ambassador in the world of the Mexican cuisine
+  image: images/patriciaQuintana.jpg
+  image_position: right
+- title: Juan Ramon de la Fuente
+  desc: Former Secretary of Health for President Zedillo´s cabinet, former President of UNAM and current representative of Mexico to the United Nations
+  image: images/juanRamonDeLaFuente.JPG
+  image_position: right
+- title: Gilberto Herrera
+  desc: Senator in Mexico
+  image: images/finalRector.jpg
+  image_position: right
+- title: Jose White Quartet
+  desc: Considered one of the best string quartets in Latin America
+  image: images/cuarteto.jpg
+  image_position: right
+- title: J Chi
+  desc: My piano instructor from Taiwain who studied at Berklee Music
+  image: images/janiceChi.jpg
+  image_position: right
+- title: David Hernandez, Jorge Torres and Victor Ibarra
+  desc: Mexican composers after analyzing one of my songs
+  image: images/grupoCompositores.jpg
+  image_position: right
+- title: Calos Outon
+  desc: Conductor of the City of Burgos Band (Spain) and French hornist of one of the best symphonic bands of the word, “La Artistica de Buñol” 
+  image: images/carlosOuton.jpg
+  image_position: right
+- title: Alejandro Barrañon
+  desc: Piano concert player of Bellas Artes in Mexico City
+  image: images/alejandroBarranon.jpg
+  image_position: right
+- title: Ludwig Carrasco
+  desc: Conductor of the Chamber Orchestra of Bellas Artes in Mexico City
+  image: images/ludwigCarrasco.jpg
+  image_position: right
+---
+
+<div class="full centered-text light-cyan lamp">
+  <div class="four spacing"></div>
+  <div class="section-title">
+    <div class="row">
+      <div class="medium-10 medium-centered columns">
+        <h1 class="wow slideInUp">Gallery</h1>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="medium-9 medium-centered columns">
+      <div class="header-quote">
+        <p>To raise new questions, new possibilities, to regard old problems from a new angle, requires creative imagination and marks real advance in science.</p>
+      </div>
+    </div>
+  </div>
+  <div class="two spacing"></div>
+</div>
+<div class="four spacing"></div>
+<div class="two spacing"></div>
+{% for service in page.services %}
+  <div class="full no-padding">
+    <div class="row">
+      {% if service.image_position == 'left' %}
+        <div class="medium-6 columns">
+          <img class="imggallery" src="{{site.url}}/{{service.image}}" alt="">
+        </div>
+        <div class="medium-6 columns">
+          <div class="service-info right-text">
+            <h2>{{service.title}}</h2>
+            <p>{{service.desc}}</p>
+            <div class="two spacing"></div>
+          </div>
+        </div>
+      {% else %}
+        <div class="medium-6 columns">
+          <div class="service-info right-text">
+            <h2>{{service.title}}</h2>
+            <p>{{service.desc}}</p>
+            <div class="two spacing"></div>
+          </div>
+        </div>
+        <div class="medium-6 columns">
+          <img class="imggallery" src="{{site.url}}/{{service.image}}" alt="">
+        </div>
+      {% endif %}
+    </div>
+    <div class="four spacing"></div>
+    <div class="two spacing"></div>
+  </div>
+{% endfor %}
+</div>

@@ -13,11 +13,9 @@ description: > # this means to ignore newlines until "baseurl:"
   Queretaro, Mexico who specializes in Flamenco, Waltzes, Pasodoble and New Age.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://musicemmanuel.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
 
 # Build settings
 markdown: kramdown
-
 
 gems:
   - jekyll-paginate
