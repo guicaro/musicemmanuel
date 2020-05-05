@@ -4,23 +4,21 @@
 - name: Music
   section_id: music
   children:
-    - name: Ambient
-      path: portfolio-item.html
-    - name: Dance
-      path: portfolio-item.html
-    - name: Flamenco
-      path: portfolio-item-2.html
     - name: Marches
       path: portfolio-item.html
-    - name: Midle East
-      path: portfolio-item-2.html
-    - name: Mistery
+    - name: Waltz 
       path: portfolio-item-2.html
     - name: New Age
       path: portfolio-item-2.html
+    - name: Midle East
+      path: portfolio-item-2.html
+    - name: Dance / Ambient
+      path: portfolio-item.html
     - name: Pasodoble
       path: portfolio-item-2.html
-    - name: Waltz 
+    - name: Flamenco
+      path: portfolio-item-2.html
+    - name: Mistery
       path: portfolio-item-2.html
 - name: Gallery
   section_id: gallery
