@@ -6,4 +6,6 @@ rename html files, nothing like portfolio.html
 Fix title of pages
 clean unused stuff
 create sitemap
+add facebook and opengraph and twitter tags
 google analytics
+privacy policy

@@ -21,7 +21,7 @@
     - name: Mistery
       path: mistery.html
 - name: Projects
-  path: scores.html
+  path: projects.html
   section_id: projects
 - name: Gallery
   section_id: gallery
