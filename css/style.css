@@ -1383,3 +1383,10 @@ form.update-form input.button:hover {
 .pager .newer {
   float: left;
 }
+
+.centerImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

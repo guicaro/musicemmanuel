@@ -5,9 +5,9 @@
   section_id: music
   children:
     - name: Marches
-      path: portfolio-item.html
+      path: marches.html
     - name: Waltz 
-      path: portfolio-item-2.html
+      path: waltz.html
     - name: New Age
       path: portfolio-item-2.html
     - name: Midle East
@@ -20,6 +20,9 @@
       path: portfolio-item-2.html
     - name: Mistery
       path: portfolio-item-2.html
+- name: Projects
+  path: scores.html
+  section_id: projects
 - name: Gallery
   section_id: gallery
   children:
