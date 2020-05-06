@@ -8,18 +8,18 @@
       path: marches.html
     - name: Waltz 
       path: waltz.html
-    - name: New Age
-      path: portfolio-item-2.html
+    - name: New-Age
+      path: newAge.html
     - name: Midle East
-      path: portfolio-item-2.html
+      path: middleEast.html
     - name: Dance / Ambient
-      path: portfolio-item.html
+      path: dance.html
     - name: Pasodoble
-      path: portfolio-item-2.html
+      path: pasodoble.html
     - name: Flamenco
-      path: portfolio-item-2.html
+      path: flamenco.html
     - name: Mistery
-      path: portfolio-item-2.html
+      path: mistery.html
 - name: Projects
   path: scores.html
   section_id: projects
